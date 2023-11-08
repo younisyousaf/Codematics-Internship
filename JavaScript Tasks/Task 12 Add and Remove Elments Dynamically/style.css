@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+}
+
+#main-container {
+    padding: 30px 0px 0px 0px;
+}
+
+#input-content {
+    width: 75%;
+    padding-left: 4.4%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+#input-content label {
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 4px;
+}
+
+#input-content input {
+    height: 2.5em;
+    width: 13em;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 2px rgba(0.8, 0.8, 1, 0.1);
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+#input-content input::placeholder {
+    font-size: 20px;
+}
+
+#input-content input:focus {
+    outline: 3px solid rgb(56, 175, 222);
+}
+
+#add-button {
+    padding: 2% 2%;
+}
+
+#add-button button {
+    padding: 12px;
+    width: 6em;
+    border-radius: 5px;
+    border: 2px solid #adadad;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+}
+#add-button button:active{
+    background: none!important;
+}
+#input-content2 {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4.5%;
+}
+
+#input-content2 label {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 0px;
+}
+
+#input-content2 input {
+    height: 2.5em;
+    width: 13em;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 2px rgba(0.8, 0.8, 1, 0.1);
+    outline: none;
+    border-radius: 3px;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+#input-content2 input::placeholder {
+    font-size: 20px;
+}
+
+#input-content2 input:focus {
+    outline: 3px solid skyblue;
+}
+
+#remove-btn {
+    background: linear-gradient(to bottom, #D4D4D3, #F4F4F3);
+    border: 2px solid #acacaa;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+#first-div{
+    display : flex;
+    margin-top : 2%;
+    justify-content : space-between;
+}
+.mystyle{
+  background : linear-gradient(to bottom, #D4D4D3, #F4F4F3);
+  border : 2px solid #acacaa;
+  font-size : 18px;
+  height : 2em;
+  margin-top : 5px;
+  font-weight : 500;
+  padding : 0px 10px;
+  border-radius : 2px;
+  cursor : pointer;
+}
+.mystyle:active {
+    background: #898889!important;
+    border: none;
+}
