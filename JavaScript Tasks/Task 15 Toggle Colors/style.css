@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+#buttons{
+display: flex;
+justify-content: space-between;
+width: 30%;
+margin: auto;
+}
+#purple,#grey,#yellow,#red,#skyblue{
+    padding: 20px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+#purple{
+    background-color: purple;
+}
+#grey{
+    background-color: grey;
+}
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+#skyblue{
+    background-color: skyblue;
+}
