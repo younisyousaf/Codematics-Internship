@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="https://kit.fontawesome.com/802f193297.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="left-arrow">
+            <i class="fa-sharp fa-solid fa-angle-left" id="leftbutton"></i>
+        </div>
+        <div class="slider-images">
+            <figure>
+                <img src="bg1.jpg" id="Slider_Image" alt="The Woods">
+                <figcaption id="Captions">The Woods</figcaption>
+            </figure>
+        </div>
+        <div class="right-arrow">
+            <i class="fa-sharp fa-solid fa-angle-right" id="rightbutton"></i>
+        </div>
+    </div>
+    <div class="slider">
+
+        <img onclick="TapImage(0)" src="bg1.jpg" alt="The Woods">
+        <img src="bg2.jpg" onclick="TapImage(1)" alt="Cinque Terre">
+        <img src="bg3.jpg" onclick="TapImage(2)" alt="Mountains and Fjords">
+        <img src="bg4.jpg" onclick="TapImage(3)" alt="Nature and Sunrise">
+        <img src="bg5.jpg" onclick="TapImage(4)" alt="Snowy Mountains">
+        <img src="bg6.jpg" onclick="TapImage(5)" alt="Northern Lights">
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
