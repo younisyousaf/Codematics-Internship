@@ -1,0 +1,423 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#img_section {
+    width: 20%;
+    margin: 10px 0 0 15px;
+}
+
+#img_section img {
+    width: 45%;
+}
+
+.main_content {
+    background-color: rgb(133, 40, 40);
+    margin-left: 17px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 88%, 92% 100%, 20% 100%, 0 100%, 0 0);
+    display: flex;
+
+}
+
+.content_left {
+    width: 50%;
+    justify-content: center;
+    display: inline-block;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.content_left h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
+.para1 {
+    width: 85%;
+    line-height: 1.5;
+}
+
+.para2 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.content_right {
+    width: 50%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_types {
+    background-color: transparent;
+    height: 40px;
+    margin-top: 10px;
+    width: 95%;
+    border: 1px solid white;
+    color: white;
+    padding-left: 5px;
+}
+
+.input_types::placeholder {
+    color: white;
+}
+
+.section2 {
+    margin-top: 10px;
+}
+
+.section2 h2 {
+    font-size: 20px;
+    font-weight: 900;
+    width: 8em;
+}
+
+.section2 p {
+    color: white;
+    width: 100%;
+}
+
+.livestream {
+    color: white;
+}
+
+.livestream textarea {
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1px;
+}
+
+.description::placeholder {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tour-campaign {
+    color: white;
+    margin-top: 10px;
+}
+
+.tour-campaign textarea {
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1px;
+}
+
+.sponsor {
+    color: white;
+    margin-top: 10px;
+}
+
+.sponsor textarea {
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1px;
+}
+
+.technology {
+    color: white;
+    margin-top: 10px;
+}
+
+.technology textarea {
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1px;
+}
+
+.online-campaign {
+    color: white;
+    margin-top: 10px;
+}
+
+.online-campaign textarea {
+    background-color: transparent;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 1px;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+.button {
+    width: 40%;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button p {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+
+/* Media Query for Mobile Devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    #img_section img {
+        width: 100%;
+    }
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 97%, 90% 100%, 20% 100%, 0 100%, 0 0);
+        max-width: 480px;
+        padding-bottom: 15px;
+    }
+
+    .content_left,
+    .content_right {
+        max-width: 480px;
+
+    }
+
+    .content_left h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .para1,
+    .para2 {
+        text-align: center;
+
+    }
+
+    .section2 h2 {
+        text-align: center;
+    }
+
+    .section2 .para3 {
+        text-align: center;
+    }
+
+    .section2 .livestream,
+    .tour-campaign,
+    .sponsor,
+    .technology,
+    .online-campaign {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .livestream,
+    .tour-campaign,
+    .sponsor,
+    .technology,
+    .online-campaign,
+    textarea {
+        height: 6em;
+        width: 14em;
+        margin-right: 24px;
+    }
+
+    .livestream,
+    .tour-campaign,
+    .sponsor,
+    .technology,
+    .online-campaign {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2-span {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 2em;
+        width: 9.5em;
+    }
+
+    .button p {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    #img_section img {
+        width: 100%;
+    }
+
+    .main_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 8px;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 95%, 90% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .content_left {
+        padding-left: 20px;
+        width: 50%;
+    }
+
+    .content_left h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .content_left .para1 {
+        text-align: center;
+        padding-left: 18px;
+    }
+
+    .content_left .para2 {
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    .content_right {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 7%;
+    }
+
+    .content_right .input_types {
+        width: auto 15em;
+    }
+
+    .content_right .para3 {
+        width: 66%;
+        text-align: center;
+    }
+
+
+    .content_right #description {
+        height: 5em;
+        width: 16em;
+    }
+
+    .button {
+        width: 55%;
+        height: 3em;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .button p {
+        font-size: 15px;
+        padding-left: 2px;
+        padding-top: 5%;
+    }
+    .button i{
+        padding-top: 5px;
+        padding-left: 2px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main_content {
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 93%, 90% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .header #img_section img {
+        width: 80%;
+    }
+
+    .content_left {
+        padding-left: 55px;
+        width: 50%;
+    }
+
+    .content_right {
+        width: 50%;
+    }
+
+    .content_right .para3 {
+        width: 66%;
+    }
+
+    .content_right textarea {
+        height: 5em;
+        width: 25em;
+    }
+
+    .button {
+        width: 55%;
+        padding: 5px;
+    }
+
+    .button i {
+        size: 15px;
+    }
+
+    .button span p {
+        font-size: 16px;
+    }
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .main_content {
+        clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 90%, 92% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .content_right textarea {
+        height: 5em;
+        width: 30em;
+    }
+
+    .content_right .para3 {
+        width: 75%;
+    }
+
+    .content_right .button {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .button span p {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .content_right .para3 {
+        width: 90%;
+    }
+}
