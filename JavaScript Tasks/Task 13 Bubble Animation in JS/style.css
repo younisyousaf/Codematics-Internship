@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    background: #387475;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+span {
+    width: 20px;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFB8C5;
+    border: 1px solid #C4899E;
+    top: 100%;
+    animation: to_top 6000ms linear;
+}
+
+@keyframes to_top {
+    from {
+        top: 100%;
+
+    }
+
+    to {
+        top: -10%;
+    }
+}
