@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#container button {
+    font-size: 20px;
+    background-color: rgb(212, 206, 206);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+#toggle-buttons {
+    border-radius: 10px;
+    padding: 70px 0px;
+    width: 20%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btnTwo,
+#btnThree {
+    margin-top: 5%;
+}
+#btnOne, #btnTwo, #btnThree{
+background-color: grey;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+padding: 5px;
+padding-right:  45px;
+
+}
+
+/* #btnOne:active, #btnTwo:active, #btnThree:active{
+    background-color: skyblue;
+}
+ #btnOne object:active,#btnTwo object:active,#btnThree object:active{
+    transform: translateX(40px);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    } */
