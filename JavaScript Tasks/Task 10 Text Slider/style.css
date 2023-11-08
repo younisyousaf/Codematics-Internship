@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.upper_section {
+    border: 1.3px solid black;
+}
+
+.inner-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 66px;
+    align-items: center;
+    width: 100%;
+}
+
+.trand {
+    background-color: #FFC108;
+    padding: 24px;
+    width: 8%;
+}
+
+#text {
+    padding-left: 8px;
+    font-size: 18px;
+    width: 70%;
+}
+
+.arrow-icon {
+    margin-right: 5%;
+    padding: 23px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+}
+#left, #right i{
+    color: white;
+}
+#left {
+    width: 10px;
+    background-color: #6D747D;
+    padding: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right {
+    width: 10px;
+    background-color: #6D747D;
+    padding: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lower_section{
+    border: 1.3px solid black;
+    margin-top: 1px;
+}
+.inner_content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 66px;
+    align-items: center;
+    width: 100%;
+}
+
+.trand2{
+    background-color: #FFC108;
+    padding: 24px;
+    width: 8%;
+}
+
+.auto-typing{
+    width: 68%;
+    margin-right: 4%;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+
+.lower_arrow-icon{
+    padding: 1px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7%;
+    width: 8%;
+}
+.lower_arrow-icon i{
+    color: white;
+}
+#lower-left{
+    width: 10px;
+    background-color: #6D747D;
+    padding: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lower-right{
+    width: 10px;
+    background-color: #6D747D;
+    padding: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
