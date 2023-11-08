@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Key Code Name</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        table tr td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="insert">
+            <p>Press any Key and Check the Magic!</p>
+        </div>
+    </div>
+    <script>
+        const insert = document.getElementById("insert");
+
+        window.addEventListener('keydown', (e) => {
+            insert.innerHTML = `<div>
+                <table>
+  <tr>
+    <th>Key Name</th>
+    <th>Key Code</th>
+    <th>Key Value</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? 'Space' : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+
+</table>
+</div>`
+        })
+    </script>
+</body>
+
+</html>
