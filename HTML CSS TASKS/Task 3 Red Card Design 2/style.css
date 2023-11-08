@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.section1 {
+    height: 100vh;
+    background-color: rgb(133, 40, 40);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0px, 100% 85%, 92% 100%, 20% 100%, 0px 100%, 0px 0px);
+    padding-left: 12%;
+}
+
+.img-sec {
+    width: 30%;
+
+}
+
+.img-sec img {
+    width: 30%;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: antiquewhite;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+.paragraphs {
+    width: 80%;
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: 15px;
+    color: antiquewhite;
+}
+
+.para2 {
+    margin-top: 10px;
+}
+
+.clubs-section {
+    margin-left: 12%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    height: 220vh;
+    /* border: 1px solid black; */
+}
+
+.header-section {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: 18px;
+
+}
+
+.header-section h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.header-section img{
+    margin-top: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.img-section {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-section img {
+    width: 7%;
+}
+
+.text-section {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.best-clubs2 {
+    margin-top: 8%;
+}
+
+.header-section2 {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: 18px;
+
+}
+
+.header-section2 h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.header-section2 img{
+    margin-top: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.img-section2 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-section2 img {
+    width: 7%;
+}
+
+.text-section2 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.best-clubs3 {
+    margin-top: 8%;
+}
+
+.header-section3 {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: 18px;
+
+}
+
+.header-section3 h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.header-section3 img{
+    margin-top: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.img-section3 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-section3 img {
+    width: 7%;
+}
+
+.text-section3 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.best-clubs4 {
+    margin-top: 8%;
+}
+
+.header-section4 {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: 18px;
+
+}
+
+.header-section4 h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.header-section4 img{
+    margin-top: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.img-section4 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-section4 img {
+    width: 7%;
+}
+
+.text-section4 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.best-clubs5 {
+    margin-top: 8%;
+}
+
+.header-section5 {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: 18px;
+
+}
+
+.header-section5 h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.header-section5 img{
+    margin-top: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.img-section5 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-section5 img {
+    width: 7%;
+}
+
+.text-section5 {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer {
+    height: 60vh;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0px, 100% 75%, 92% 100%, 20% 100%, 0px 100%, 0px 0px);
+    background-color: rgb(133, 40, 40);
+}
+
+.footer p {
+    font-size: 50px;
+    font-weight: 900;
+    padding-left: 10%;
+    padding-top: 8%;
+    color: antiquewhite;
+}
