@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <p>{{firstName}} {{lastName}}</p>
+        <label for="firstName"> First Name: <input type="text" id="firstName" :value="firstName"></label>
+        <label for="lastName"> Last Name: <input type="text" id="lastName"
+                @input="updateLastName('Last Name Event is triggered',$event)"> </label>
+        <p>{{ age }}</p>
+        <button type="button" v-on:click="increment"> Increment</button>
+        <!-- Shorthand for the v-on:click -->
+        <!-- <button @click ="increment">Shorthand</button> -->
+        <button type="button" v-on:click="ageDecrement" style="margin-left: 10px;">Decrement</button>
+        <button @click="greet">Greet</button>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+
+            data() {
+                return {
+                    age: 20,
+                    firstName: 'Younis',
+                    lastName: 'Yousaf',
+                    name: 'Vue.js'
+                }
+            },
+            methods: {
+                increment() {
+                    this.age++;
+                },
+                ageDecrement() {
+                    this.age--
+                },
+                updateLastName(msg, event) {
+                    event.preventDefault();
+                    console.log(msg)
+                    this.lastName = event.target.value;
+                },
+                greet(event) {
+                    // `this` inside methods points to the current active instance
+                    alert(`Hello ${this.name}!`)
+                    // `event` is the native DOM event
+                    // if (event) {
+                    //     alert(event.target.tagName)
+                    // }
+                }
+            },
+        }).mount('#app')
+  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+        #data-binding {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #data-binding input {
+            width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app" v-cloak>
+        <p>Welcome to Vue.JS</p>
+        <!-- An Expression is a single line of code that evaluates to a value. The value may be a number, string, or a logical value. -->
+        <p>
+            {{(firstName + " " + lastName).toLocaleUpperCase()}} <br>
+            <!-- {{`${firstName} ${lastName.toUpperCase()}`}} -->
+            <!-- String interpolation is the process of replacing placeholders into string values -->
+        </p>
+        <hr style="size: 10px;">
+        <h3>Two Way Data-Binding</h3>
+    
+        <div id="data-binding">
+            <label for="firstName">First Name:</label>
+            <input type="text" v-model="firstName" id="firstName">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" v-model="lastName" id="lastName">
+        </div>
+
+        <p>{{message()}}</p>
+
+        <div v-bind="multipleattributes">
+            <p>VueJS</p>
+        </div>
+        <div id="time">
+            <time :title="toTitleDate(date)" :datetime="date">
+                {{ formatDate(date) }}
+            </time>
+        </div>
+
+        <div id="toggle-visibility">
+            <button @click="toggleVisibility()">Click to Toggle Visibility</button>
+            <p v-if="seen">Now you see me</p>
+        </div>
+        <div class="url-visitor">
+            <a v-bind:[attributename]="url" v-on:click="doSomething">Click to Visit w3schools</a>
+        </div>
+        <!-- <button >Click me</button> -->
+    </div>
+
+<p> <a :="google" target="_blank">Google</a></p>
+
+
+    <!-- <div id="app2">
+    {{(firstName + " " + lastName).toLocaleUpperCase()}}
+</div> -->
+  
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

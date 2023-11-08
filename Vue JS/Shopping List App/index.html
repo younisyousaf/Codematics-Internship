@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List App</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{header}}</h1>
+      <div class="add-item-form">
+        <!-- We Can also perform this task through a form event "submit" 
+        v-on:submit="items.push({id: items.length + 1, label: newitem})" 
+        -->
+        <input 
+        v-model.lazy="newitem" 
+        type="text" 
+        placeholder="Add an item" id="new-item" 
+        v-on:keyup.enter="items.push({id: items.length + 1, label: newitem})"
+        >
+        <label for="high-priority">
+            <input 
+            type="checkbox" 
+            id="high-priority" v-model="newitempriority">
+            Priority:
+        </label>
+        <button 
+        @click="items.push({id: items.length + 1, label: newitem})" 
+        class="btn btn-primary">Add Item</button>
+      </div>
+        <!-- {{newitem}} -->
+        <!-- <span>Priority:
+
+            <label> <input type="radio" v-model="newitempriority" value="low" id="">Low</label>
+            <label> <input type="radio" v-model="newitempriority" value="high" id="">High</label>
+        </span> -->
+        <!-- <select name="" id="" v-model="newitempriority">
+            <option value="low">Low</option>
+            <option value="high">High</option>
+        </select>
+        {{newitempriority}} -->
+      
+       <!-- <strong> {{newitempriority}}</strong><br>
+       <label for="">
+        <input type="checkbox" name="" id="" v-model="icecreamFlavors" value="Chocolate">
+        Chocolate
+       </label>
+       <label for="">
+        <input type="checkbox" name="" id="" v-model="icecreamFlavors" value="Vanilla">
+        Vanilla
+       </label>
+       <label for="">
+        <input type="checkbox" name="" id="" v-model="icecreamFlavors" value="Strawberry">
+        Strawberry
+       </label>
+       <strong>{{icecreamFlavors}}</strong> -->
+        <ul>
+            <li v-for="(item,index) in items" :key="item.id">
+                <!-- {{index+1+'.'}} -->
+                {{item.label}}</li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

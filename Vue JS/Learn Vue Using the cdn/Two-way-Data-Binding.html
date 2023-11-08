@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Two Way Data Binding</title>
+    <style>
+        label{
+            font-size: 20px;
+        }
+        input{
+            border-radius: 5px;
+            width: 200px;
+            height: 25px;
+        }
+    </style>
+     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <label for="firstName">First Name: <input type="text" id="firstName" v-model="firstName"></label>
+    <label for="lastName">Last Name: <input type="text" id="lastName" v-model="lastName"></label>
+    <hr>
+    <p>{{firstName}} {{lastName}}</p>
+    <p><a v-bind:href="url">Google</a></p>
+    <p>Outputting Raw HTML</p>
+    <p v-html="rawhtml"></p>
+  </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    firstName: 'Younis',
+                    lastName: 'Khan',
+                    url: 'https://google.com',
+                    rawhtml: '<a href="https://google.com">Google</a>',
+                }
+            },
+        });
+        app.mount('#app')
+    </script>
+</body>
+</html>

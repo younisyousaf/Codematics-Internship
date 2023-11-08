@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events in Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .name-input {
+            display: flex;
+            flex-direction: column;
+            gap: 10.5px;
+        }
+
+        button {
+            width: 12%;
+            margin-left: 10px;
+        }
+
+        hr {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="name-input">
+            <label for="firstName">
+                First Name:
+                <input type="text" v-model.lazy.trim="firstName" id="firstName" />
+            </label>
+            <label for="middleName">
+                Middle Name:
+                <input type="text" @keyup.enter="updateMiddleName" id="middleName" />
+            </label>
+            <label for="lastName">
+                Last Name:
+                <input type="text" v-model="lastName" id="lastName" />
+            </label>
+            <p> My Full Name is : {{fullName}}</p>
+            <hr>
+            <p>My Age is : {{age}}</p>
+        </div>
+
+        <div class="age-input">
+            <label for="myage">Age: <input type="number" v-model.number="age" id="myage"></label><br> <br>
+            <button v-on:click="incrementAge">Increment</button>
+            <button v-on:click="decrementAge">Decrement</button>
+        </div>
+
+        <div class="computed-properties">
+            <p>Has <strong>{{author.name}}</strong> Published Books: </p>
+            <span>{{pulishedBookMessage}}</span>
+        </div>
+        <!-- Compute: to calculate something
+        computed properties: that calculated in some manner
+        -->
+        <!-- Writeable Computed Property -->
+        <div class="fullname">
+            <label for="myfullname">FullName: </label>
+            <input type="text" id="myfullname" v-model="myfullName">
+        </div>
+        <div class="display-fullname">
+            <p> First Name: {{myfullName.split(' ')[0] || ''}}</p>
+            <p> Last Name: {{myfullName.split(' ')[1]|| ''}}</p>
+        </div>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    firstName: 'Sarah',
+                    middleName: '',
+                    lastName: 'Smith',
+                    age: 20,
+                    author: {
+                        name: 'John Doe',
+                        books: [
+                            'Vue 2 - Advanced Guide',
+                            'Vue 3 - Basic Guide',
+                            'Vue 4 - The Mystery'
+                        ]
+                    },
+                    myfirstname: 'Younis',
+                    mylastname: 'Yousaf',
+                }
+            },
+            methods: {
+
+                incrementAge() {
+                    this.age++;
+                },
+                decrementAge() {
+                    this.age--;
+                },
+                updateMiddleName(event) {
+                    this.middleName = event.target.value;
+                }
+            },
+            computed: {
+                fullName() {
+                    console.log('Full Name Computed Property was called!')
+                    return `${this.firstName} ${this.middleName} ${this.lastName}`
+                },
+                pulishedBookMessage() {
+                    // Here the message will depend on the length of books published by the author
+                    return this.author.books.length > 0 ? 'Yes' : 'No';
+                },
+                // Writeable computed property
+                myfullName: {
+                    get() {
+                        return this.myfirstname + ' ' + this.mylastname;
+                    },
+                    set(newValue) {
+                        [this.myfirstname, this.mylastname] = newValue.split(' ');
+                    }
+
+                }
+            }
+        }).mount('#app')
+
+    </script>
+</body>
+
+</html>
