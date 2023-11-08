@@ -9,6 +9,7 @@ This repository contains the code and solutions for the tasks I've completed.
 - JavaScript
 - HTML
 - CSS
+- Bootstrap
 - Responsive Web Design
 - Modern Web Design Solutions
 
