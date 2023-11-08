@@ -4,6 +4,14 @@ Welcome to my URRAAN (Codematics) Internship repository! During my internship at
 I've had the opportunity to work on a variety of tasks related to web development, including HTML, CSS, Responsive Web Design, JavaScript, and Vue.js. 
 This repository contains the code and solutions for the tasks I've completed.
 
+- Frontend Development
+- Vue.js
+- JavaScript
+- HTML
+- CSS
+- Responsive Web Design
+- Modern Web Design Solutions
+
 **Internship Host: [CODEMATICS](https://www.codematics.co/en/)**
 
 ## Task Categories
